@@ -1,0 +1,19 @@
+
+.slider-container {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .slick-dots li button:before {
+    color: #ececec; /* Thay đổi màu dấu chấm tại đây */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #bbe4e9; /* Thay đổi màu dấu chấm khi được chọn */
+  }

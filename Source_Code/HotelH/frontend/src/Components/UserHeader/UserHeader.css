@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+.user-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 1px 3px -2px rgb(255, 255, 255);
+}
+.user-header img{
+    width: 100px;
+    padding-left: 30px;
+}
+
+.logout-button{
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    
+}
+.logout-button span{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.logout-button button{
+    padding: 10px 25px;
+    border: 1px solid #8dc6ff;
+    border-radius: 10px;
+    background: #8dc6ff;
+    color: rgb(23, 3, 70);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s linear;
+    font-family: "Arimo", sans-serif;
+}
+.logout-button button:hover{
+    background: rgb(255, 255, 255);
+    color: #8dc6ff;
+    box-shadow: 0 0 15px 5px #8dc6ff;
+}
+.logout-button button:active{
+    background: #8dc6ff;
+    color: white;
+    box-shadow: 0 0 15px 5px #8dc6ff;
+}
+.logout-button .fa-icon{
+    font-size: 30px;
+    color: #8dc6ff;
+    cursor: pointer;
+    transition: linear 0.4s;
+}
+.logout-button .fa-icon:hover{
+    color: rgb(255, 255, 255);
+}
+.logout-button .fa-icon-user{
+    font-size: 50px;
+    color: #8dc6ff;
+    cursor: pointer;
+}
+.greeting{
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+}
+@media screen and (max-width:600px){
+    
+    .user-header img{
+        padding-left: 0;
+    }
+    .logout-button{
+        padding-right: 0;
+    }
+    .logout-button span{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .logout-button button{
+        padding: 10px 20px;
+    }
+    .logout-button .fa-icon{
+        font-size: 30px;
+    }
+    .logout-button .fa-icon-user{
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    .greeting{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .logout-button button{
+        padding: 10px 15px;
+    }
+    .logout-button .fa-icon{
+        font-size: 25px;
+    }
+    .logout-button .fa-icon-user{
+        font-size: 30px;
+    }
+    
+}

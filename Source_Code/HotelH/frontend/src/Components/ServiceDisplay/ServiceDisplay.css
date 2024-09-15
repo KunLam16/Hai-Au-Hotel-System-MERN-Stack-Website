@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&display=swap');
+
+.service-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    font-family: "Oswald", sans-serif;
+}
+
+.service-display-logo img {
+    width: 100px;
+    padding-left: 30px;
+}
+
+.fa-icon-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #8dc6ff; 
+    transition: linear 0.3s;
+}
+
+.fa-icon-back:hover {
+    color: #ddd;
+}
+
+.service-display-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1000px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px 5px #8dc6ff;
+    margin-top: 50px; /* to make space for the back button */
+    position: relative;
+}
+
+.service-display-image {
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.service-display-image:hover {
+    transform: scale(1.05);
+    transition: linear 0.5s;
+}
+
+.service-display-details {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center; /* Căn giữa tên và mô tả */
+    font-family: "Oswald", sans-serif;
+}
+
+.service-display-details .name {
+    margin: 0 0 10px 0; /* Đưa tên lên sát bên trên */
+    color: #8dc6ff;
+    font-size: 70px; /* Tăng kích thước chữ */
+}
+
+.service-display-details .information {
+    margin: 20px 0;
+    font-size: 20px; /* Tùy chỉnh kích thước font nếu cần */
+    line-height: 30px;
+}
+.service-display-details .information-price {
+    font-size: 40px;
+    color: #8dc6ff;
+    font-weight: 700;
+}
+.book-service {
+    background-color: #8dc6ff;
+    color: #021526;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 25px;
+    align-self: center;
+    margin-top: 20px;
+    transition: linear 0.3s;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    position: absolute;
+    bottom: 20px; /* Đặt nút sát bên dưới */
+}
+
+.book-service:hover {
+    background-color: #021526;
+    color: #8dc6ff;
+    box-shadow: 0 0 15px 5px #8dc6ff;
+}
+
+.book-service:active {
+    background-color: white;
+    color: #021526;
+    transform: scale(0.95);
+}
+
+.error-message-service {
+    color: #ff0000;
+    font-family: "Arimo", sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 80px;
+}
+
+.not-found {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+@media  screen and (max-width: 768px) {
+    .service-display-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-display-image {
+        max-width: 80%;
+        margin-right: 0;
+    }
+    .service-display-details {
+        width: 100%;
+    }
+    .service-display-details .name {
+        font-size: 40px;
+    }
+    .service-display-details .information-price {
+        font-size: 50px;
+        margin-bottom: 100px;
+    }
+    
+}
+@media  screen and (max-width: 1080px){
+    .service-display-details .information-price{
+       margin-bottom:  80px;
+       font-size: 55px;
+    }
+} 
+@media  screen and (max-width: 300px){
+    .service-display-container{
+        display: none;
+    }
+}

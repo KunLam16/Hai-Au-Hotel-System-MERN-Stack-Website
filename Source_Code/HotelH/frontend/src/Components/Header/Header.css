@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 1px 3px -2px rgb(255, 255, 255);
+}
+.header-logo img{
+    width: 100px;
+    padding-left: 30px;
+}
+.quote {
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    
+
+}
+.quote span{
+    font-family: 'Playfair', serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.login-button{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+.login-button button{
+    font-family: "Josefin Sans", sans-serif;
+    padding: 10px 20px;
+    border: 1px solid #8dc6ff;
+    border-radius: 15px;
+    background: #8dc6ff;
+    color: rgb(22, 0, 82);
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+.login-button button:hover{
+    background: rgb(255, 255, 255);
+    color: #005792;
+    box-shadow: 0 0 15px 5px #8dc6ff;
+}
+.login-button button:active{
+    background: #005792;
+    color: white;
+    box-shadow: 0 0 15px 5px #005792;
+}
+.button-container{
+    display: flex;
+    gap: 10px;
+}
+.signup-button{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 22px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+}
+.signup-button span{
+    transition: linear 0.2s;
+}
+.signup-button span:hover{
+    color: #8dc6ff;
+    text-decoration: underline;
+}
+@media(max-width:850px){
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote{
+        display: none;
+    }
+    .login-button{
+        margin-top: 20px;
+    }
+    .button-container{
+        margin-top: 20px;
+    }
+    .signup-button{
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}

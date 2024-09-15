@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Dancing+Script:wght@400;700&family=Josefin+Sans:wght@100;700&family=Lexend+Deca:wght@100;900&family=Mulish:wght@200;1000&family=Noto+Sans+Mono:wght@100;900&family=Oswald:wght@200;700&family=Roboto+Condensed:wght@100;900&family=Roboto+Slab:wght@100;900&display=swap');
+
+.edit-employee-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-employee-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.edit-employee-form-container {
+  background-color: #1e1e1e;
+  padding: 30px;
+  border-radius: 15px;
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: "Roboto Condensed", sans-serif;
+  color: #e0e0e0;
+  border: 1px solid #ffffff;
+}
+
+.edit-employee-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #a5bdfd;
+}
+
+.edit-employee-form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  background-color: #2c2c2c;
+  color: #e0e0e0;
+}
+
+.edit-employee-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Roboto Condensed", sans-serif;
+  transition: linear 0.4s;
+}
+
+.edit-employee-submit {
+  background-color: #a5bdfd;
+  color: #363b4e;
+}
+
+.edit-employee-submit:hover {
+  background-color: transparent;
+  box-shadow: 0 0 15px 5px #a5bdfd;
+  color: #a5bdfd;
+}
+
+.edit-employee-submit:active {
+  transform: scale(0.95);
+}
+
+.edit-employee-close {
+  background-color: #f44336;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.edit-employee-close:hover {
+  background-color: transparent;
+  color: #f44336;
+  box-shadow: 0 0 15px 5px #f44336;
+}
+
+.edit-employee-close:active {
+  transform: scale(0.95);
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.id-interaction-error {
+  color: #f44336;
+  text-align: center;
+  margin: 0;
+}

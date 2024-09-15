@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tilt+Warp&display=swap');
+
+.bill-cell {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bill-id {
+  font-size: 25px; /* Kích thước font cho ID */
+  margin-right: 20px; /* Khoảng cách giữa ID và ngày tạo */
+}
+.bill-text-custom{
+    color: #a5bdfd;
+}
+
+.bill-date {
+  flex: 1;
+  font-size: 20px; /* Kích thước font cho ngày tạo */
+  margin-left: 60px; /* Khoảng cách giữa ID và ngày tạo */
+}
+
+.bill-actions {
+  margin-left: auto; /* Đẩy các nút sang bên phải */
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.bill-actions button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.bill-actions button:active {
+  transform: scale(0.95);
+}
+
+.button-view {
+  background-color: #8594e4;
+  transition: linear 0.5s;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.button-view:hover {
+  background-color: #a5bdfd;
+  box-shadow: 0 0 5px 2px #a5bdfd;
+}
+.fa-icon-view-bill{
+    margin-left: 10px;
+}
+@media screen and (max-width: 850px) {
+  .bill-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bill-id {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+}

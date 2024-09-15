@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+.booked-room-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px #8dc6ff;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+    max-width: 300px;
+    background-color: #233142;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.booked-room-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.room-card-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #ececec;
+    text-align: center;
+}
+.room-card-price{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #ececec;
+    text-align: center;
+}
+
+.room-card-type,
+.room-card-description,
+.booking-dates,
+.booking-status {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.booking-dates,
+.booking-status {
+    color: #e4f1fe;
+}
+
+.cancel-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: linear 0.3s;
+    font-family: "Lexend Deca", sans-serif;
+    
+}
+
+.cancel-button:hover {
+    background-color: #c0392b;
+}

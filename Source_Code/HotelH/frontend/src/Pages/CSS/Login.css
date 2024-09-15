@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+.login{
+    width: 100%;
+    height: 95vh;
+    padding-top: 30px;
+    font-family: "Arimo", sans-serif;;
+}
+.login-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Giãn cách giữa logo và container */
+}
+
+.login-logo img {
+    width: 130px;
+}
+.login-container{
+    width: 580px;
+    height: 450px;
+    border: 2px solid #005792;
+    border-radius: 20px;
+    box-shadow:  0 0 15px 5px #005792;
+    margin: auto;
+    padding: 40px 60px;
+
+}
+.login-container h1{
+    color: #8dc6ff;
+    text-align: center;
+    margin: 20px 0px;
+}
+.login-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;;
+} 
+.login-fields input{
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #a2a8d3;
+    border-radius: 15px;
+    font-size: 15px;
+}
+/* .login-container button{
+    width: 600px;
+    height: 40px;
+    color: white;
+    background: rgb(23, 3, 70);
+    margin-top: 20px;
+    transition: 0.3s linear;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid rgb(23, 3, 70);
+    font-family: "Arimo", sans-serif;;
+    
+} */
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.btn-continue{
+    color:rgb(23, 3, 70);
+    width: 100%;
+    height: 50px;
+    background: #8dc6ff;
+    margin-top: 20px;
+    transition: 0.3s linear;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #8dc6ff;
+    font-family: "Arimo", sans-serif;
+    margin-bottom: 10px;
+
+
+}
+.btn-back {
+    color:#8dc6ff ;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-left: 10px;
+
+}
+.btn-back span{
+    color: #8dc6ff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.2s linear;
+    
+}
+.btn-back span:hover{
+    text-decoration: underline;
+}
+.login-container button:hover{
+    background: #f3f3f3;
+    color: #8dc6ff;
+    box-shadow: 0 0 15px 5px #8dc6ff;
+}
+.login-container button:active{
+    transform: scale(0.95);
+    background-color: #f3f3f3;
+}
+.login-login{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.login-login span{
+    color: #005792;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s linear;
+    
+}
+.login-login span:hover{
+    text-decoration: underline;
+}
+.error {
+    color: #ff0000;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+.input-container{
+    display: flex;
+    gap: 10px;
+}
+.fa-icon-login{
+    margin-top: 15px;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px){
+    .login-container{
+        width: 90%;
+        padding: 20px;
+    }
+    .login-fields input{
+        width: 100%;
+    }
+    .login-container button{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 0;
+    }
+    .btn-continue{
+        width: 100%;
+    }
+    .btn-back{
+        margin-left: 0;
+    }
+    
+    .fa-icon-login{
+        margin-top: 10;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .login-container{
+        width: 90%;
+        padding: 20px;
+    }
+    .login-fields input{
+        width: 100%;
+    }
+    .login-container button{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 0;
+    }
+    .btn-continue{
+        width: 100%;
+    }
+    .btn-back{
+        margin-left: 0;
+    }
+    .fa-icon-login{
+        margin-top: 10;
+    }
+    
+}
+@media  screen and (max-width:200px) {
+    .login-container{
+        display: none;
+    }
+    
+}
+@media  screen and (max-width:850px) {
+    .login-container{
+        width: 90%;
+        padding: 20px;
+    }
+    .login-fields input{
+        width: 100%;
+    }
+    .login-container button{
+        width: 100%;
+    }
+    .btn{
+        margin-left: 0;
+    }
+    .btn-continue{
+        width: 100%;
+    }
+    .btn-back{
+        margin-left: 0;
+    }
+    .fa-icon-login{
+        margin-top: 10;
+    }
+}

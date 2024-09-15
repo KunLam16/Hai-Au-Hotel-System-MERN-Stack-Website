@@ -1,0 +1,86 @@
+.manage-payment-card {
+    background-color: #051e1b;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+    transition: linear 0.3s;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.manage-payment-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.manage-payment-card-name {
+    font-weight: 600;
+    color: #feffdf;
+    font-size: 28px;
+    text-align: center;
+    margin: 6px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.manage-payment-card-price,
+.manage-payment-card-booking-dates,
+.manage-payment-card-booking-status {
+    color: #ffebd3;
+    margin: 6px 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'Arimo', sans-serif;
+}
+.custom-text {
+   color: #cbf078;
+   font-weight: 600;
+}
+.custom-text-price {
+    color: #cbf078;
+   
+}
+
+.manage-payment-card-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.manage-payment-card-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.manage-payment-card-pay-button {
+    width: 70%;
+    background-color: #218838;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: linear 0.3s;
+    font-family: 'Oswald', sans-serif;
+}
+
+.manage-payment-card-pay-button:hover {
+    background-color: #379956;
+    box-shadow: 0 0 10px 5px #cbf078;
+}
+
+.manage-payment-card-pay-button:active {
+    background-color: white;
+    color: #000;
+    scale: 0.9;
+}
+.fa-icon-confirm {
+    font-size: 25px;
+    margin-right: 10px;
+}

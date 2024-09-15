@@ -1,0 +1,70 @@
+
+
+.manage-booking-card {
+    background-color: #0e2431;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+    transition: linear 0.3s;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các thành phần theo trục ngang */
+}
+.manage-booking-card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.manage-booking-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.manage-booking-card-details .manage-booking-card-details-name {
+    font-weight: 600;
+    color: #e4f1fe;
+    font-size: 25px;
+    text-align: center;
+    margin: 6px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.manage-booking-card-details .manage-booking-card-details-information {
+    color: #ffebd3;
+    margin: 6px 0;
+    font-size: 17px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 500;
+}
+
+.confirm-button {
+    justify-content: center;
+    margin-top: 10px;
+    background-color: #8594e4;
+    font-size: 22px;
+    color: #22313f;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: linear 0.3s;
+    font-family: 'Oswald', sans-serif;
+}
+
+.confirm-button:hover {
+    background-color: #8dc6ff;
+    box-shadow: 0 0 10px 5px #d5def5;
+    color: #22313f;
+}
+
+.confirm-button:active {
+    background-color: white;
+    color: #000;
+    transform: scale(0.9);
+}

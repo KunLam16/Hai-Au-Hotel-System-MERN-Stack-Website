@@ -1,0 +1,15 @@
+.payment-status-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .no-payments-message {
+    font-size: 16px;
+    color: #ececec;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

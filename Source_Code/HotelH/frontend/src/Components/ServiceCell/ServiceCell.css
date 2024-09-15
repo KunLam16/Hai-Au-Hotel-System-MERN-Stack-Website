@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Noto+Sans+Mono:wght@100..900&family=Oswald:wght@200..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Tilt+Warp&display=swap');
+
+.service-cell {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.service-id {
+  font-size: 30px; /* Tăng kích thước font cho ID */
+  color: #a5bdfd;
+  margin-right: 20px; /* Khoảng cách giữa ID và ảnh */
+}
+
+.service-image {
+  text-align: center;
+}
+
+.service-image img {
+  max-width: 100px; /* Tăng kích thước ảnh */
+  max-height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-left: 20px; /* Khoảng cách giữa ID và ảnh */
+}
+
+.service-name {
+  flex: 1;
+  font-size: 35px; /* Tăng kích thước font cho tên dịch vụ */
+  font-weight: 700;
+  color: #a5bdfd;
+  margin-left: 30px; /* Khoảng cách giữa ảnh và tên dịch vụ */
+}
+.service-description {
+    
+  font-size: 18px; /* Tăng kích thước font cho mô tả */
+  margin-right: 100px; /* Khoảng cách giữa tên dịch vụ và mô tả */
+  flex: 1;
+}
+
+.service-price {
+  font-size: 30px; /* Tăng kích thước font cho giá dịch vụ */
+  font-weight: 700;
+  color: #a5bdfd;
+  margin-left: 20px; /* Khoảng cách giữa tên dịch vụ và giá */
+  margin-right: 40px;
+}
+
+.service-actions {
+  margin-left: auto; /* Đẩy các nút sang bên phải */
+  display: flex;
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.service-actions button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+.service-actions button:active {
+  transform: scale(0.95);
+}
+
+ .button-edit {
+  background-color: #8594e4;
+  transition: linear 0.5s;
+  
+}
+.button-edit:hover {
+  background-color: #a5bdfd;
+  box-shadow: 0 0 5px 2px #a5bdfd;
+}
+
+.button-delete {
+  background-color: #f44336;
+  transition: linear 0.5s;
+}
+.button-delete:hover {
+  background-color: #fe6453;
+  box-shadow: 0 0 5px 2px #fe6453;
+}
+.fa-icon-edit {
+  color: #141010;
+  font-size: 25px;
+}
+.fa-icon-delete {
+  color: #141010;
+  font-size: 25px;
+}
+@media screen and (max-width: 850px) {
+  .service-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .service-id {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .service-name {
+    margin-left: 0;
+  }
+
+  .service-price {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .service-actions {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+}
+@media screen and (max-width: 600px) {
+  .service-cell {
+    padding: 10px;
+  }
+
+  .service-id {
+    font-size: 20px;
+  }
+
+  .service-name {
+    font-size: 25px;
+  }
+
+  .service-price {
+    font-size: 20px;
+  }
+
+  .service-description {
+    font-size: 15px;
+  }
+
+  .service-actions button {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .fa-icon-edit {
+    font-size: 20px;
+  }
+
+  .fa-icon-delete {
+    font-size: 20px;
+  }
+  
+}
+@media screen and (max-width: 1160px) {
+  .service-name {
+    font-size: 20px;
+  }
+  
+  
+}
+@media screen and (max-width: 1000px) {
+  .service-description {
+    font-size: 16px;
+  }
+  
+  
+}
+@media screen and (max-width: 1000px) {
+  .service-name {
+    font-size: 16px;
+  }
+  .service-description {
+    font-size: 10px;
+  }
+  
+  
+}
+@media  screen and (max-width:900) {
+  .service-description{
+    font-size: 5px;
+  }
+  
+}

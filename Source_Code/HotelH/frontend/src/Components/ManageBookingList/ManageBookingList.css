@@ -1,0 +1,12 @@
+
+.manage-booking-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .no-booking-message{
+    margin-top: 10px;
+    font-size: 15px;
+  }

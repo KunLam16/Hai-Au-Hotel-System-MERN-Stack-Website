@@ -1,0 +1,69 @@
+
+.confirmed-room-card {
+    background-color: #062925;
+    width: 300px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 12px;
+    transition: linear 0.3s;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các thành phần theo trục ngang */
+}
+
+
+.confirmed-room-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.confirmed-room-card-name {
+    font-weight: 600;
+    color: #feffdf;
+    font-size: 30px;
+    text-align: center;
+    margin: 6px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.confirmed-room-card-price,
+.confirmed-room-card-booking-dates,
+.confirmed-room-card-booking-status {
+    color: #ffebd3;
+    margin: 6px 0;
+    font-style: italic;
+    font-size: 15px;
+    font-family: 'Arimo', sans-serif;
+    
+}
+.confirmed-room-card-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.confirmed-room-card-pay-button {
+    margin-top: 10px;
+    background-color: #218838;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: linear 0.3s;
+    font-family: 'Oswald', sans-serif;
+}
+
+.confirmed-room-card-pay-button:hover {
+    background-color: #379956;
+    box-shadow: 0 0 10px 5px #cbf078
+}
+
+.confirmed-room-card-pay-button:active {
+    background-color: white;
+    color: #000;
+    scale: 0.9;
+}
